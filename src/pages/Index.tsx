@@ -16,6 +16,10 @@ const Index = () => {
     setCurrentPage('services');
   };
 
+  const handleBackHome = () => {
+    setCurrentPage('home');
+  };
+
   return (
     <div className="relative">
       <CursorGlow />
@@ -29,7 +33,7 @@ const Index = () => {
       )}
       
       {currentPage === 'services' && (
-        <Services />
+        <Services onBackHome={handleBackHome} />
       )}
     </div>
   );
