@@ -4,6 +4,10 @@ import TestimonialCard from '@/components/TestimonialCard';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import { Button } from '@/components/ui/button';
 
+interface ServicesProps {
+  onBackHome?: () => void;
+}
+
 const testimonialData = [
   {
     name: "TechGamer99",
@@ -31,13 +35,22 @@ const testimonialData = [
   }
 ];
 
-const Services = () => {
+const Services = ({ onBackHome }: ServicesProps) => {
   const handleContactUs = () => {
     window.open('mailto:contact@wammysagency.com', '_blank');
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white relative">
+      {onBackHome && (
+        <Button
+          variant="link"
+          onClick={onBackHome}
+          className="absolute left-4 top-4 text-white"
+        >
+          Back to home
+        </Button>
+      )}
       {/* Header Section */}
       <div className="container mx-auto px-6 py-16">
         <div className="text-center mb-16">
