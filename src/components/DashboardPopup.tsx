@@ -23,6 +23,8 @@ const DashboardPopup = ({ children, data, stats }: DashboardPopupProps) => {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent
+        onEscapeKeyDown={(e) => e.preventDefault()}
+        onPointerDownOutside={(e) => e.preventDefault()}
         className="bg-gray-900 text-white border border-twitch/40 shadow-[0_0_30px_#9145FE] animate-glow"
       >
         <h3 className="text-lg font-semibold mb-4 text-center">
