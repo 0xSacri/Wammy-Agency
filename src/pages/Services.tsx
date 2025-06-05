@@ -1,7 +1,6 @@
 
 import AnimatedCounter from '@/components/AnimatedCounter';
 import TestimonialCard from '@/components/TestimonialCard';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
 import { Button } from '@/components/ui/button';
 
 interface ServicesProps {
@@ -102,8 +101,6 @@ const Services = ({ onBackHome }: ServicesProps) => {
           </div>
         </div>
 
-        {/* Additional Testimonials Carousel */}
-        <TestimonialCarousel />
 
         {/* Contact Section */}
         <div className="text-center py-16">
