@@ -26,7 +26,8 @@ const testimonialData = [
     adsWithoutUs: 159,
     imageLeft: true,
     streamData: generateStreams(1, 3),
-    stats: { moneyEarned: 1815, increasePercent: 400 }
+    stats: { moneyEarned: 1815, increasePercent: 400 },
+    flag: "🇮🇹"
   },
   {
     name: "XXXXX",
@@ -35,7 +36,8 @@ const testimonialData = [
     adsWithoutUs: 120,
     imageLeft: false,
     streamData: generateStreams(2, 4),
-    stats: { moneyEarned: 1029, increasePercent: 350 }
+    stats: { moneyEarned: 1029, increasePercent: 350 },
+    flag: "🇫🇷"
   },
   {
     name: "XXXXX",
@@ -44,7 +46,8 @@ const testimonialData = [
     adsWithoutUs: 95,
     imageLeft: true,
     streamData: generateStreams(0.5, 5),
-    stats: { moneyEarned: 1958, increasePercent: 420 }
+    stats: { moneyEarned: 1958, increasePercent: 420 },
+    flag: "🇺🇸"
   },
   {
     name: "XXXXX",
@@ -53,7 +56,8 @@ const testimonialData = [
     adsWithoutUs: 163,
     imageLeft: false,
     streamData: generateStreams(1.5, 2),
-    stats: { moneyEarned: 1539, increasePercent: 275 }
+    stats: { moneyEarned: 1539, increasePercent: 275 },
+    flag: "🇺🇸"
   }
 ];
 
@@ -98,12 +102,12 @@ const Services = ({ onBackHome }: ServicesProps) => {
 
         {/* Stats Section */}
         <div className="grid md:grid-cols-2 gap-12 mb-20">
-          <div className="relative text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up shadow-[0_0_40px_#9145FE80]" style={{ animationDelay: '0.4s' }}>
+          <div className="relative text-center p-8 bg-gray-900/30 rounded-2xl border border-gray-700 shadow-lg animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <div className="text-gray-400 text-lg mb-4">Total Generated</div>
             <AnimatedCounter target={TOTAL_GENERATED} prefix="$" />
             <div className="text-gray-500 text-sm mt-2">For our partners</div>
           </div>
-          <div className="relative text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up shadow-[0_0_40px_#9145FE80]" style={{ animationDelay: '0.6s' }}>
+          <div className="relative text-center p-8 bg-gray-900/30 rounded-2xl border border-gray-700 shadow-lg animate-slide-up" style={{ animationDelay: '0.6s' }}>
             <div className="text-gray-400 text-lg mb-4">Streamers Collaborated</div>
             <AnimatedCounter target={STREAMERS_COLLABORATED} />
             <div className="text-gray-500 text-sm mt-2">And counting</div>
@@ -129,6 +133,7 @@ const Services = ({ onBackHome }: ServicesProps) => {
                 imageLeft={testimonial.imageLeft}
                 streamData={testimonial.streamData}
                 stats={testimonial.stats}
+                flag={testimonial.flag}
                 showConnector={index < testimonialData.length - 1}
               />
             ))}
