@@ -102,10 +102,10 @@
 
 .animated-border-gradient {
   position: relative;
-  z-index: 0;
 }
 
 .animated-border-gradient::before {
+  z-index: -1;
   content: "";
   position: absolute;
   inset: 0;
