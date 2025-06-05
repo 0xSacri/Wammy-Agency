@@ -16,7 +16,7 @@ const DialogPortal = ({
   <DialogPrimitive.Portal {...props}>
     <div
       className={cn(
-        "fixed inset-0 z-50 flex items-start justify-center sm:items-center",
+        "fixed inset-0 z-50 flex items-center justify-center",
         className
       )}
     >
@@ -34,7 +34,7 @@ const DialogOverlay = React.forwardRef<
   <DialogPrimitive.Overlay
     ref={ref}
     className={cn(
-      "fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
+      "fixed inset-0 z-40 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
       className
     )}
     {...props}
