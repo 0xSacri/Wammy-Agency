@@ -63,7 +63,7 @@ const TestimonialCard = ({
               totalHours={popupStats.totalHours}
               totalRevenue={popupStats.totalRevenue}
               trigger={
-                <div className="bg-gray-900 rounded-2xl p-4 border border-gray-700 shadow-lg relative overflow-hidden cursor-pointer animated-border-gradient">
+                <div className="bg-gray-900 rounded-2xl p-4 border border-gray-700 shadow-lg relative cursor-pointer animated-border-gradient">
                   <div className="absolute inset-0 bg-gradient-to-br from-twitch/10 to-transparent"></div>
                   <div className="relative">
                     <div className="flex items-center gap-2 mb-4">
@@ -103,7 +103,7 @@ const TestimonialCard = ({
               }
             />
           ) : (
-            <div className="bg-gray-900 rounded-2xl p-4 border border-gray-700 shadow-lg relative overflow-hidden animated-border-gradient">
+            <div className="bg-gray-900 rounded-2xl p-4 border border-gray-700 shadow-lg relative animated-border-gradient">
               <div className="absolute inset-0 bg-gradient-to-br from-twitch/10 to-transparent"></div>
               <div className="relative">
                 <div className="flex items-center gap-2 mb-4">
