@@ -30,6 +30,7 @@ const TestimonialCard = ({
     }));
 
   const progress = Math.min(100, (stats.moneyEarned / 2000) * 100);
+  const withoutUsProgress = Math.min(100, (adsWithoutUs / 2000) * 100);
   const withoutUsFormatted = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -38,6 +39,7 @@ const TestimonialCard = ({
   const adIncreasePercent = Math.round(
     ((stats.moneyEarned - adsWithoutUs) / adsWithoutUs) * 100
   );
+  const withUsProgress = Math.max(0, progress - withoutUsProgress);
 
   return (
     <div className="relative py-16">
@@ -58,10 +60,14 @@ const TestimonialCard = ({
                   <span className="text-gray-300">Ads revenues</span>
                   <span className="text-twitch font-bold text-xl">{earnings}</span>
                 </div>
-                <div className="w-full bg-gray-800 rounded-full h-2">
+                <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden flex">
                   <div
-                    className="bg-twitch h-2 rounded-full animate-pulse-glow"
-                    style={{ width: `${progress}%` }}
+                    className="bg-yellow-500 h-2"
+                    style={{ width: `${withoutUsProgress}%` }}
+                  ></div>
+                  <div
+                    className="bg-twitch h-2 animate-pulse-glow"
+                    style={{ width: `${withUsProgress}%` }}
                   ></div>
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-sm">
@@ -71,7 +77,7 @@ const TestimonialCard = ({
                   </div>
                   <div>
                     <div className="text-gray-400">Ads revenues without us</div>
-                    <div className="text-blue-400 font-semibold">{withoutUsFormatted}</div>
+                    <div className="text-yellow-500 font-semibold">{withoutUsFormatted}</div>
                   </div>
                 </div>
               </div>
