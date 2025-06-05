@@ -48,7 +48,7 @@ const TestimonialCard = ({
       <div className={`flex flex-col lg:flex-row items-center gap-12 ${imageLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
         {/* Dashboard Screenshot */}
         <div className="flex-1 relative">
-          <div className="bg-gray-900 rounded-2xl p-4 border border-gray-700 shadow-lg relative overflow-hidden">
+          <div className="bg-gray-900 rounded-2xl p-4 border border-gray-700 shadow-lg relative overflow-hidden rotating-glow">
             <div className="absolute inset-0 bg-gradient-to-br from-twitch/10 to-transparent"></div>
             <div className="relative">
               <div className="flex items-center gap-2 mb-4">
@@ -89,7 +89,7 @@ const TestimonialCard = ({
 
         {/* Testimonial */}
         <div className="flex-1 text-center lg:text-left">
-          <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/70 shadow-lg relative">
+          <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/70 shadow-lg relative rotating-glow">
             <div className="absolute inset-0 bg-gradient-to-r from-twitch/5 to-transparent rounded-2xl"></div>
             <div className="relative">
               <div className="text-6xl text-twitch/30 mb-4">"</div>
