@@ -23,6 +23,7 @@ const testimonialData = [
     name: "XXXXX",
     testimonial: "Working with Wammy's Agency has been a game-changer for my streaming career. They helped me increase my ad revenue by 400% while maintaining my authentic content style.",
     earnings: "$1,815",
+    adsWithoutUs: 159,
     imageLeft: true,
     streamData: generateStreams(1, 3),
     stats: { moneyEarned: 1815, increasePercent: 400 }
@@ -31,6 +32,7 @@ const testimonialData = [
     name: "XXXXX",
     testimonial: "The professionalism and results speak for themselves. In just 3 months, I went from struggling to pay bills to having a stable income from streaming.",
     earnings: "$1,029",
+    adsWithoutUs: 120,
     imageLeft: false,
     streamData: generateStreams(2, 4),
     stats: { moneyEarned: 1029, increasePercent: 350 }
@@ -39,6 +41,7 @@ const testimonialData = [
     name: "XXXXX",
     testimonial: "I was skeptical at first, but Wammy's delivered exactly what they promised. The ad optimization strategies they implemented are incredible.",
     earnings: "$1,958",
+    adsWithoutUs: 95,
     imageLeft: true,
     streamData: generateStreams(0.5, 5),
     stats: { moneyEarned: 1958, increasePercent: 420 }
@@ -47,6 +50,7 @@ const testimonialData = [
     name: "XXXXX",
     testimonial: "Finally, an agency that understands Twitch and actually cares about their partners' success. The transparency and support are unmatched.",
     earnings: "$1,539",
+    adsWithoutUs: 163,
     imageLeft: false,
     streamData: generateStreams(1.5, 2),
     stats: { moneyEarned: 1539, increasePercent: 275 }
@@ -121,6 +125,7 @@ const Services = ({ onBackHome }: ServicesProps) => {
                 name={testimonial.name}
                 testimonial={testimonial.testimonial}
                 earnings={testimonial.earnings}
+                adsWithoutUs={testimonial.adsWithoutUs}
                 imageLeft={testimonial.imageLeft}
                 streamData={testimonial.streamData}
                 stats={testimonial.stats}

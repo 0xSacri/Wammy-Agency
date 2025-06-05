@@ -9,9 +9,19 @@ interface TestimonialCardProps {
   showConnector?: boolean;
   streamData?: RevenuePoint[];
   stats: { moneyEarned: number; increasePercent: number };
+  adsWithoutUs: number;
 }
 
-const TestimonialCard = ({ name, testimonial, earnings, imageLeft, showConnector = true, streamData, stats }: TestimonialCardProps) => {
+const TestimonialCard = ({
+  name,
+  testimonial,
+  earnings,
+  imageLeft,
+  showConnector = true,
+  streamData,
+  stats,
+  adsWithoutUs
+}: TestimonialCardProps) => {
   const chartData =
     streamData ||
     Array.from({ length: 30 }, (_, i) => ({
@@ -20,6 +30,14 @@ const TestimonialCard = ({ name, testimonial, earnings, imageLeft, showConnector
     }));
 
   const progress = Math.min(100, (stats.moneyEarned / 2000) * 100);
+  const withoutUsFormatted = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0
+  }).format(adsWithoutUs);
+  const adIncreasePercent = Math.round(
+    ((stats.moneyEarned - adsWithoutUs) / adsWithoutUs) * 100
+  );
 
   return (
     <div className="relative py-16">
@@ -49,11 +67,11 @@ const TestimonialCard = ({ name, testimonial, earnings, imageLeft, showConnector
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <div className="text-gray-400">Ad Revenue</div>
-                    <div className="text-green-400 font-semibold">+247%</div>
+                    <div className="text-green-400 font-semibold">+{adIncreasePercent}%</div>
                   </div>
                   <div>
-                    <div className="text-gray-400">Views</div>
-                    <div className="text-blue-400 font-semibold">+180%</div>
+                    <div className="text-gray-400">Ads revenues without us</div>
+                    <div className="text-blue-400 font-semibold">{withoutUsFormatted}</div>
                   </div>
                 </div>
               </div>
