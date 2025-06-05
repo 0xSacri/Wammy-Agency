@@ -33,13 +33,18 @@ const CursorGlow = () => {
         left: position.x,
         top: position.y,
         transform: 'translate(-50%, -50%)',
+        width: 0,
+        height: 0,
       }}
     >
       <div
-        className="w-4 h-4 rounded-full"
+        className="animate-glow"
         style={{
-          backgroundColor: '#9145FE',
-          boxShadow: '0 0 10px 4px rgba(145, 69, 254, 0.4)',
+          width: '40px',
+          height: '40px',
+          borderRadius: '50%',
+          boxShadow: '0 0 16px 6px rgba(145, 69, 254, 0.3)',
+          backgroundColor: 'transparent',
         }}
       ></div>
     </div>
