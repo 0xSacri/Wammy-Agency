@@ -1,0 +1,1046 @@
+[
+  {
+    "name": "XXXXX",
+    "testimonial": "Working with Wammy's Agency has been a game-changer for my streaming career. They helped me increase my ad revenue by 400% while maintaining my authentic content style.",
+    "earnings": "$2,115",
+    "adsWithoutUs": 159,
+    "imageSrc": "/streamers/FlannelJax.png",
+    "imageLeft": true,
+    "streamData": [
+      {
+        "date": "Day 1",
+        "revenue": 100
+      },
+      {
+        "date": "Day 2",
+        "revenue": 223
+      },
+      {
+        "date": "Day 3",
+        "revenue": 0
+      },
+      {
+        "date": "Day 4",
+        "revenue": 245
+      },
+      {
+        "date": "Day 5",
+        "revenue": 0
+      },
+      {
+        "date": "Day 6",
+        "revenue": 0
+      },
+      {
+        "date": "Day 7",
+        "revenue": 167
+      },
+      {
+        "date": "Day 8",
+        "revenue": 172
+      },
+      {
+        "date": "Day 9",
+        "revenue": 118
+      },
+      {
+        "date": "Day 10",
+        "revenue": 0
+      },
+      {
+        "date": "Day 11",
+        "revenue": 0
+      },
+      {
+        "date": "Day 12",
+        "revenue": 105
+      },
+      {
+        "date": "Day 13",
+        "revenue": 161
+      },
+      {
+        "date": "Day 14",
+        "revenue": 0
+      },
+      {
+        "date": "Day 15",
+        "revenue": 134
+      },
+      {
+        "date": "Day 16",
+        "revenue": 101
+      },
+      {
+        "date": "Day 17",
+        "revenue": 106
+      },
+      {
+        "date": "Day 18",
+        "revenue": 130
+      },
+      {
+        "date": "Day 19",
+        "revenue": 0
+      },
+      {
+        "date": "Day 20",
+        "revenue": 0
+      },
+      {
+        "date": "Day 21",
+        "revenue": 0
+      },
+      {
+        "date": "Day 22",
+        "revenue": 0
+      },
+      {
+        "date": "Day 23",
+        "revenue": 0
+      },
+      {
+        "date": "Day 24",
+        "revenue": 122
+      },
+      {
+        "date": "Day 25",
+        "revenue": 133
+      },
+      {
+        "date": "Day 26",
+        "revenue": 0
+      },
+      {
+        "date": "Day 27",
+        "revenue": 0
+      },
+      {
+        "date": "Day 28",
+        "revenue": 0
+      },
+      {
+        "date": "Day 29",
+        "revenue": 98
+      },
+      {
+        "date": "Day 30",
+        "revenue": 0
+      }
+    ],
+    "stats": {
+      "moneyEarned": 2115,
+      "increasePercent": 400
+    },
+    "popupStats": {
+      "data": [
+        {
+          "date": "Day 1",
+          "revenue": 100
+        },
+        {
+          "date": "Day 2",
+          "revenue": 223
+        },
+        {
+          "date": "Day 3",
+          "revenue": 0
+        },
+        {
+          "date": "Day 4",
+          "revenue": 245
+        },
+        {
+          "date": "Day 5",
+          "revenue": 0
+        },
+        {
+          "date": "Day 6",
+          "revenue": 0
+        },
+        {
+          "date": "Day 7",
+          "revenue": 167
+        },
+        {
+          "date": "Day 8",
+          "revenue": 172
+        },
+        {
+          "date": "Day 9",
+          "revenue": 118
+        },
+        {
+          "date": "Day 10",
+          "revenue": 0
+        },
+        {
+          "date": "Day 11",
+          "revenue": 0
+        },
+        {
+          "date": "Day 12",
+          "revenue": 105
+        },
+        {
+          "date": "Day 13",
+          "revenue": 161
+        },
+        {
+          "date": "Day 14",
+          "revenue": 0
+        },
+        {
+          "date": "Day 15",
+          "revenue": 134
+        },
+        {
+          "date": "Day 16",
+          "revenue": 101
+        },
+        {
+          "date": "Day 17",
+          "revenue": 106
+        },
+        {
+          "date": "Day 18",
+          "revenue": 130
+        },
+        {
+          "date": "Day 19",
+          "revenue": 0
+        },
+        {
+          "date": "Day 20",
+          "revenue": 0
+        },
+        {
+          "date": "Day 21",
+          "revenue": 0
+        },
+        {
+          "date": "Day 22",
+          "revenue": 0
+        },
+        {
+          "date": "Day 23",
+          "revenue": 0
+        },
+        {
+          "date": "Day 24",
+          "revenue": 122
+        },
+        {
+          "date": "Day 25",
+          "revenue": 133
+        },
+        {
+          "date": "Day 26",
+          "revenue": 0
+        },
+        {
+          "date": "Day 27",
+          "revenue": 0
+        },
+        {
+          "date": "Day 28",
+          "revenue": 0
+        },
+        {
+          "date": "Day 29",
+          "revenue": 98
+        },
+        {
+          "date": "Day 30",
+          "revenue": 0
+        }
+      ],
+      "totalStreams": 15,
+      "totalHours": 45,
+      "totalRevenue": 2115
+    }
+  },
+  {
+    "name": "XXXXX",
+    "testimonial": "The professionalism and results speak for themselves. In just 3 months, I went from struggling to pay bills to having a stable income from streaming.",
+    "earnings": "$1,229",
+    "adsWithoutUs": 120,
+    "imageSrc": "/streamers/Rafsou.png",
+    "imageLeft": false,
+    "streamData": [
+      {
+        "date": "Day 1",
+        "revenue": 0
+      },
+      {
+        "date": "Day 2",
+        "revenue": 146
+      },
+      {
+        "date": "Day 3",
+        "revenue": 0
+      },
+      {
+        "date": "Day 4",
+        "revenue": 122
+      },
+      {
+        "date": "Day 5",
+        "revenue": 0
+      },
+      {
+        "date": "Day 6",
+        "revenue": 103
+      },
+      {
+        "date": "Day 7",
+        "revenue": 0
+      },
+      {
+        "date": "Day 8",
+        "revenue": 0
+      },
+      {
+        "date": "Day 9",
+        "revenue": 112
+      },
+      {
+        "date": "Day 10",
+        "revenue": 0
+      },
+      {
+        "date": "Day 11",
+        "revenue": 0
+      },
+      {
+        "date": "Day 12",
+        "revenue": 108
+      },
+      {
+        "date": "Day 13",
+        "revenue": 0
+      },
+      {
+        "date": "Day 14",
+        "revenue": 0
+      },
+      {
+        "date": "Day 15",
+        "revenue": 115
+      },
+      {
+        "date": "Day 16",
+        "revenue": 113
+      },
+      {
+        "date": "Day 17",
+        "revenue": 0
+      },
+      {
+        "date": "Day 18",
+        "revenue": 0
+      },
+      {
+        "date": "Day 19",
+        "revenue": 100
+      },
+      {
+        "date": "Day 20",
+        "revenue": 101
+      },
+      {
+        "date": "Day 21",
+        "revenue": 0
+      },
+      {
+        "date": "Day 22",
+        "revenue": 0
+      },
+      {
+        "date": "Day 23",
+        "revenue": 0
+      },
+      {
+        "date": "Day 24",
+        "revenue": 0
+      },
+      {
+        "date": "Day 25",
+        "revenue": 109
+      },
+      {
+        "date": "Day 26",
+        "revenue": 0
+      },
+      {
+        "date": "Day 27",
+        "revenue": 0
+      },
+      {
+        "date": "Day 28",
+        "revenue": 100
+      },
+      {
+        "date": "Day 29",
+        "revenue": 0
+      },
+      {
+        "date": "Day 30",
+        "revenue": 0
+      }
+    ],
+    "stats": {
+      "moneyEarned": 1229,
+      "increasePercent": 350
+    },
+    "popupStats": {
+      "data": [
+        {
+          "date": "Day 1",
+          "revenue": 0
+        },
+        {
+          "date": "Day 2",
+          "revenue": 146
+        },
+        {
+          "date": "Day 3",
+          "revenue": 0
+        },
+        {
+          "date": "Day 4",
+          "revenue": 122
+        },
+        {
+          "date": "Day 5",
+          "revenue": 0
+        },
+        {
+          "date": "Day 6",
+          "revenue": 103
+        },
+        {
+          "date": "Day 7",
+          "revenue": 0
+        },
+        {
+          "date": "Day 8",
+          "revenue": 0
+        },
+        {
+          "date": "Day 9",
+          "revenue": 112
+        },
+        {
+          "date": "Day 10",
+          "revenue": 0
+        },
+        {
+          "date": "Day 11",
+          "revenue": 0
+        },
+        {
+          "date": "Day 12",
+          "revenue": 108
+        },
+        {
+          "date": "Day 13",
+          "revenue": 0
+        },
+        {
+          "date": "Day 14",
+          "revenue": 0
+        },
+        {
+          "date": "Day 15",
+          "revenue": 115
+        },
+        {
+          "date": "Day 16",
+          "revenue": 113
+        },
+        {
+          "date": "Day 17",
+          "revenue": 0
+        },
+        {
+          "date": "Day 18",
+          "revenue": 0
+        },
+        {
+          "date": "Day 19",
+          "revenue": 100
+        },
+        {
+          "date": "Day 20",
+          "revenue": 101
+        },
+        {
+          "date": "Day 21",
+          "revenue": 0
+        },
+        {
+          "date": "Day 22",
+          "revenue": 0
+        },
+        {
+          "date": "Day 23",
+          "revenue": 0
+        },
+        {
+          "date": "Day 24",
+          "revenue": 0
+        },
+        {
+          "date": "Day 25",
+          "revenue": 109
+        },
+        {
+          "date": "Day 26",
+          "revenue": 0
+        },
+        {
+          "date": "Day 27",
+          "revenue": 0
+        },
+        {
+          "date": "Day 28",
+          "revenue": 100
+        },
+        {
+          "date": "Day 29",
+          "revenue": 0
+        },
+        {
+          "date": "Day 30",
+          "revenue": 0
+        }
+      ],
+      "totalStreams": 11,
+      "totalHours": 33,
+      "totalRevenue": 1229
+    }
+  },
+  {
+    "name": "XXXXX",
+    "testimonial": "I was skeptical at first, but Wammy's delivered exactly what they promised. The ad optimization strategies they implemented are incredible.",
+    "earnings": "$2,324",
+    "adsWithoutUs": 95,
+    "imageSrc": "/streamers/soldier",
+    "imageLeft": true,
+    "streamData": [
+      {
+        "date": "Day 1",
+        "revenue": 0
+      },
+      {
+        "date": "Day 2",
+        "revenue": 109
+      },
+      {
+        "date": "Day 3",
+        "revenue": 118
+      },
+      {
+        "date": "Day 4",
+        "revenue": 115
+      },
+      {
+        "date": "Day 5",
+        "revenue": 106
+      },
+      {
+        "date": "Day 6",
+        "revenue": 0
+      },
+      {
+        "date": "Day 7",
+        "revenue": 110
+      },
+      {
+        "date": "Day 8",
+        "revenue": 122
+      },
+      {
+        "date": "Day 9",
+        "revenue": 0
+      },
+      {
+        "date": "Day 10",
+        "revenue": 106
+      },
+      {
+        "date": "Day 11",
+        "revenue": 117
+      },
+      {
+        "date": "Day 12",
+        "revenue": 0
+      },
+      {
+        "date": "Day 13",
+        "revenue": 124
+      },
+      {
+        "date": "Day 14",
+        "revenue": 100
+      },
+      {
+        "date": "Day 15",
+        "revenue": 0
+      },
+      {
+        "date": "Day 16",
+        "revenue": 116
+      },
+      {
+        "date": "Day 17",
+        "revenue": 117
+      },
+      {
+        "date": "Day 18",
+        "revenue": 103
+      },
+      {
+        "date": "Day 19",
+        "revenue": 110
+      },
+      {
+        "date": "Day 20",
+        "revenue": 0
+      },
+      {
+        "date": "Day 21",
+        "revenue": 102
+      },
+      {
+        "date": "Day 22",
+        "revenue": 111
+      },
+      {
+        "date": "Day 23",
+        "revenue": 0
+      },
+      {
+        "date": "Day 24",
+        "revenue": 103
+      },
+      {
+        "date": "Day 25",
+        "revenue": 107
+      },
+      {
+        "date": "Day 26",
+        "revenue": 0
+      },
+      {
+        "date": "Day 27",
+        "revenue": 0
+      },
+      {
+        "date": "Day 28",
+        "revenue": 102
+      },
+      {
+        "date": "Day 29",
+        "revenue": 118
+      },
+      {
+        "date": "Day 30",
+        "revenue": 108
+      }
+    ],
+    "stats": {
+      "moneyEarned": 2324,
+      "increasePercent": 420
+    },
+    "popupStats": {
+      "data": [
+        {
+          "date": "Day 1",
+          "revenue": 0
+        },
+        {
+          "date": "Day 2",
+          "revenue": 109
+        },
+        {
+          "date": "Day 3",
+          "revenue": 118
+        },
+        {
+          "date": "Day 4",
+          "revenue": 115
+        },
+        {
+          "date": "Day 5",
+          "revenue": 106
+        },
+        {
+          "date": "Day 6",
+          "revenue": 0
+        },
+        {
+          "date": "Day 7",
+          "revenue": 110
+        },
+        {
+          "date": "Day 8",
+          "revenue": 122
+        },
+        {
+          "date": "Day 9",
+          "revenue": 0
+        },
+        {
+          "date": "Day 10",
+          "revenue": 106
+        },
+        {
+          "date": "Day 11",
+          "revenue": 117
+        },
+        {
+          "date": "Day 12",
+          "revenue": 0
+        },
+        {
+          "date": "Day 13",
+          "revenue": 124
+        },
+        {
+          "date": "Day 14",
+          "revenue": 100
+        },
+        {
+          "date": "Day 15",
+          "revenue": 0
+        },
+        {
+          "date": "Day 16",
+          "revenue": 116
+        },
+        {
+          "date": "Day 17",
+          "revenue": 117
+        },
+        {
+          "date": "Day 18",
+          "revenue": 103
+        },
+        {
+          "date": "Day 19",
+          "revenue": 110
+        },
+        {
+          "date": "Day 20",
+          "revenue": 0
+        },
+        {
+          "date": "Day 21",
+          "revenue": 102
+        },
+        {
+          "date": "Day 22",
+          "revenue": 111
+        },
+        {
+          "date": "Day 23",
+          "revenue": 0
+        },
+        {
+          "date": "Day 24",
+          "revenue": 103
+        },
+        {
+          "date": "Day 25",
+          "revenue": 107
+        },
+        {
+          "date": "Day 26",
+          "revenue": 0
+        },
+        {
+          "date": "Day 27",
+          "revenue": 0
+        },
+        {
+          "date": "Day 28",
+          "revenue": 102
+        },
+        {
+          "date": "Day 29",
+          "revenue": 118
+        },
+        {
+          "date": "Day 30",
+          "revenue": 108
+        }
+      ],
+      "totalStreams": 21,
+      "totalHours": 63,
+      "totalRevenue": 2324
+    }
+  },
+  {
+    "name": "XXXXX",
+    "testimonial": "Finally, an agency that understands Twitch and actually cares about their partners' success. The transparency and support are unmatched.",
+    "earnings": "$1,530",
+    "adsWithoutUs": 163,
+    "imageSrc": "/streamers/yeri.png",
+    "imageLeft": false,
+    "streamData": [
+      {
+        "date": "Day 1",
+        "revenue": 0
+      },
+      {
+        "date": "Day 2",
+        "revenue": 113
+      },
+      {
+        "date": "Day 3",
+        "revenue": 0
+      },
+      {
+        "date": "Day 4",
+        "revenue": 107
+      },
+      {
+        "date": "Day 5",
+        "revenue": 114
+      },
+      {
+        "date": "Day 6",
+        "revenue": 0
+      },
+      {
+        "date": "Day 7",
+        "revenue": 0
+      },
+      {
+        "date": "Day 8",
+        "revenue": 108
+      },
+      {
+        "date": "Day 9",
+        "revenue": 0
+      },
+      {
+        "date": "Day 10",
+        "revenue": 115
+      },
+      {
+        "date": "Day 11",
+        "revenue": 117
+      },
+      {
+        "date": "Day 12",
+        "revenue": 0
+      },
+      {
+        "date": "Day 13",
+        "revenue": 0
+      },
+      {
+        "date": "Day 14",
+        "revenue": 108
+      },
+      {
+        "date": "Day 15",
+        "revenue": 103
+      },
+      {
+        "date": "Day 16",
+        "revenue": 0
+      },
+      {
+        "date": "Day 17",
+        "revenue": 0
+      },
+      {
+        "date": "Day 18",
+        "revenue": 101
+      },
+      {
+        "date": "Day 19",
+        "revenue": 102
+      },
+      {
+        "date": "Day 20",
+        "revenue": 101
+      },
+      {
+        "date": "Day 21",
+        "revenue": 0
+      },
+      {
+        "date": "Day 22",
+        "revenue": 116
+      },
+      {
+        "date": "Day 23",
+        "revenue": 0
+      },
+      {
+        "date": "Day 24",
+        "revenue": 0
+      },
+      {
+        "date": "Day 25",
+        "revenue": 0
+      },
+      {
+        "date": "Day 26",
+        "revenue": 0
+      },
+      {
+        "date": "Day 27",
+        "revenue": 0
+      },
+      {
+        "date": "Day 28",
+        "revenue": 0
+      },
+      {
+        "date": "Day 29",
+        "revenue": 115
+      },
+      {
+        "date": "Day 30",
+        "revenue": 110
+      }
+    ],
+    "stats": {
+      "moneyEarned": 1530,
+      "increasePercent": 275
+    },
+    "popupStats": {
+      "data": [
+        {
+          "date": "Day 1",
+          "revenue": 0
+        },
+        {
+          "date": "Day 2",
+          "revenue": 113
+        },
+        {
+          "date": "Day 3",
+          "revenue": 0
+        },
+        {
+          "date": "Day 4",
+          "revenue": 107
+        },
+        {
+          "date": "Day 5",
+          "revenue": 114
+        },
+        {
+          "date": "Day 6",
+          "revenue": 0
+        },
+        {
+          "date": "Day 7",
+          "revenue": 0
+        },
+        {
+          "date": "Day 8",
+          "revenue": 108
+        },
+        {
+          "date": "Day 9",
+          "revenue": 0
+        },
+        {
+          "date": "Day 10",
+          "revenue": 115
+        },
+        {
+          "date": "Day 11",
+          "revenue": 117
+        },
+        {
+          "date": "Day 12",
+          "revenue": 0
+        },
+        {
+          "date": "Day 13",
+          "revenue": 0
+        },
+        {
+          "date": "Day 14",
+          "revenue": 108
+        },
+        {
+          "date": "Day 15",
+          "revenue": 103
+        },
+        {
+          "date": "Day 16",
+          "revenue": 0
+        },
+        {
+          "date": "Day 17",
+          "revenue": 0
+        },
+        {
+          "date": "Day 18",
+          "revenue": 101
+        },
+        {
+          "date": "Day 19",
+          "revenue": 102
+        },
+        {
+          "date": "Day 20",
+          "revenue": 101
+        },
+        {
+          "date": "Day 21",
+          "revenue": 0
+        },
+        {
+          "date": "Day 22",
+          "revenue": 116
+        },
+        {
+          "date": "Day 23",
+          "revenue": 0
+        },
+        {
+          "date": "Day 24",
+          "revenue": 0
+        },
+        {
+          "date": "Day 25",
+          "revenue": 0
+        },
+        {
+          "date": "Day 26",
+          "revenue": 0
+        },
+        {
+          "date": "Day 27",
+          "revenue": 0
+        },
+        {
+          "date": "Day 28",
+          "revenue": 0
+        },
+        {
+          "date": "Day 29",
+          "revenue": 115
+        },
+        {
+          "date": "Day 30",
+          "revenue": 110
+        }
+      ],
+      "totalStreams": 14,
+      "totalHours": 42,
+      "totalRevenue": 1530
+    }
+  }
+]
