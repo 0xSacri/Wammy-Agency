@@ -48,6 +48,7 @@ const testimonialData = [
     testimonial: "Working with Wammy's Agency has been a game-changer for my streaming career. They helped me increase my ad revenue by 400% while maintaining my authentic content style.",
     earnings: "$2,115",
     adsWithoutUs: 159,
+    imageSrc: "/streamers/FlannelJax.png",
     imageLeft: true,
     streamData: streamer1Data,
     stats: { moneyEarned: 2115, increasePercent: 400 },
@@ -58,6 +59,7 @@ const testimonialData = [
     testimonial: "The professionalism and results speak for themselves. In just 3 months, I went from struggling to pay bills to having a stable income from streaming.",
     earnings: "$1,229",
     adsWithoutUs: 120,
+    imageSrc: "/streamers/Rafsou.png",
     imageLeft: false,
     streamData: streamer2Data,
     stats: { moneyEarned: 1229, increasePercent: 350 },
@@ -68,6 +70,7 @@ const testimonialData = [
     testimonial: "I was skeptical at first, but Wammy's delivered exactly what they promised. The ad optimization strategies they implemented are incredible.",
     earnings: "$2,324",
     adsWithoutUs: 95,
+    imageSrc: "/streamers/soldier",
     imageLeft: true,
     streamData: streamer3Data,
     stats: { moneyEarned: 2324, increasePercent: 420 },
@@ -78,6 +81,7 @@ const testimonialData = [
     testimonial: "Finally, an agency that understands Twitch and actually cares about their partners' success. The transparency and support are unmatched.",
     earnings: "$1,530",
     adsWithoutUs: 163,
+    imageSrc: "/streamers/yeri.png",
     imageLeft: false,
     streamData: streamer4Data,
     stats: { moneyEarned: 1530, increasePercent: 275 },
@@ -154,6 +158,7 @@ const Services = ({ onBackHome }: ServicesProps) => {
                 testimonial={testimonial.testimonial}
                 earnings={testimonial.earnings}
                 adsWithoutUs={testimonial.adsWithoutUs}
+                imageSrc={testimonial.imageSrc}
                 imageLeft={testimonial.imageLeft}
                 streamData={testimonial.streamData}
                 stats={testimonial.stats}
