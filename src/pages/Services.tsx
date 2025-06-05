@@ -51,6 +51,13 @@ const Services = ({ onBackHome }: ServicesProps) => {
           Back to home
         </Button>
       )}
+      <Button
+        onClick={handleContactUs}
+        className="absolute right-4 top-4 bg-twitch hover:bg-twitch-dark text-black font-bold py-4 px-12 rounded-lg text-xl transition-all duration-300 hover:scale-105 animate-bounce-scale"
+        style={{ boxShadow: '0 0 30px #9145FE40' }}
+      >
+        Contact Us
+      </Button>
       {/* Header Section */}
       <div className="container mx-auto px-6 py-16">
         <div className="text-center mb-16">
