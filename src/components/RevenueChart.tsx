@@ -1,4 +1,4 @@
-import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
 import type { TooltipProps } from 'recharts';
 import type { ValueType, NameType } from 'recharts/types/component/DefaultTooltipContent';
 
@@ -28,22 +28,12 @@ const CustomTooltip = (
 const RevenueChart = ({ data }: RevenueChartProps) => (
   <div className="h-72 w-full">
     <ResponsiveContainer width="100%" height="100%">
-      <LineChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+      <BarChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
         <XAxis dataKey="date" hide />
         <YAxis hide />
-        <Tooltip
-          cursor={{ stroke: '#9145FE', strokeWidth: 2 }}
-          content={<CustomTooltip />}
-        />
-        <Line
-          type="monotone"
-          dataKey="revenue"
-          stroke="#9145FE"
-          strokeWidth={2}
-          dot={{ r: 4, stroke: '#9145FE', strokeWidth: 2, fill: '#9145FE' }}
-          activeDot={{ r: 6 }}
-        />
-      </LineChart>
+        <Tooltip cursor={{ fill: 'rgba(145,69,254,0.1)' }} content={<CustomTooltip />} />
+        <Bar dataKey="revenue" fill="#9145FE" radius={[4, 4, 0, 0]} />
+      </BarChart>
     </ResponsiveContainer>
   </div>
 );

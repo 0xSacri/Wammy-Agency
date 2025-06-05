@@ -8,27 +8,34 @@ const STREAMERS_COLLABORATED = 97;
 
 import type { RevenuePoint } from '@/components/RevenueChart';
 
-const generateStreams = (offset: number, amp: number): RevenuePoint[] =>
-  Array.from({ length: 30 }, (_, i) => ({
-    date: `Day ${i + 1}`,
-    revenue: Math.max(0, Math.round(Math.sin(i / 3 + offset) * amp + amp))
-  }));
+const createData = (values: number[]): RevenuePoint[] =>
+  values.map((revenue, i) => ({ date: `Day ${i + 1}`, revenue }));
 
-const generatePopupStats = (streamCount: number) => {
-  const data: RevenuePoint[] = [];
-  let totalRevenue = 0;
-  let totalHours = 0;
-  for (let i = 0; i < streamCount; i++) {
-    const revenue = 100 + Math.round(Math.random() * 100);
-    const hours = 2 + Math.round(Math.random() * 3);
-    totalRevenue += revenue;
-    totalHours += hours;
-    data.push({ date: `Day ${i + 1}`, revenue });
-  }
-  for (let i = streamCount; i < 30; i++) {
-    data.push({ date: `Day ${i + 1}`, revenue: 0 });
-  }
-  return { data, totalStreams: streamCount, totalHours, totalRevenue };
+const streamer1Data = createData([
+  100, 223, 0, 245, 0, 0, 167, 172, 118, 0, 0, 105, 161, 0, 134,
+  101, 106, 130, 0, 0, 0, 0, 0, 122, 133, 0, 0, 0, 98, 0
+]);
+
+const streamer2Data = createData([
+  0, 146, 0, 122, 0, 103, 0, 0, 112, 0, 0, 108, 0, 0, 115,
+  113, 0, 0, 100, 101, 0, 0, 0, 0, 109, 0, 0, 100, 0, 0
+]);
+
+const streamer3Data = createData([
+  0, 109, 118, 115, 106, 0, 110, 122, 0, 106, 117, 0, 124, 100, 0,
+  116, 117, 103, 110, 0, 102, 111, 0, 103, 107, 0, 0, 102, 118, 108
+]);
+
+const streamer4Data = createData([
+  0, 113, 0, 107, 114, 0, 0, 108, 0, 115, 117, 0, 0, 108, 103,
+  0, 0, 101, 102, 101, 0, 116, 0, 0, 0, 0, 0, 0, 115, 110
+]);
+
+const createPopupStats = (data: RevenuePoint[]) => {
+  const totalStreams = data.filter((d) => d.revenue > 0).length;
+  const totalRevenue = data.reduce((sum, d) => sum + d.revenue, 0);
+  const totalHours = totalStreams * 3;
+  return { data, totalStreams, totalHours, totalRevenue };
 };
 
 interface ServicesProps {
@@ -39,42 +46,42 @@ const testimonialData = [
   {
     name: "XXXXX",
     testimonial: "Working with Wammy's Agency has been a game-changer for my streaming career. They helped me increase my ad revenue by 400% while maintaining my authentic content style.",
-    earnings: "$1,815",
+    earnings: "$2,115",
     adsWithoutUs: 159,
     imageLeft: true,
-    streamData: generateStreams(1, 3),
-    stats: { moneyEarned: 1815, increasePercent: 400 },
-    popupStats: generatePopupStats(17)
+    streamData: streamer1Data,
+    stats: { moneyEarned: 2115, increasePercent: 400 },
+    popupStats: createPopupStats(streamer1Data)
   },
   {
     name: "XXXXX",
     testimonial: "The professionalism and results speak for themselves. In just 3 months, I went from struggling to pay bills to having a stable income from streaming.",
-    earnings: "$1,029",
+    earnings: "$1,229",
     adsWithoutUs: 120,
     imageLeft: false,
-    streamData: generateStreams(2, 4),
-    stats: { moneyEarned: 1029, increasePercent: 350 },
-    popupStats: generatePopupStats(13)
+    streamData: streamer2Data,
+    stats: { moneyEarned: 1229, increasePercent: 350 },
+    popupStats: createPopupStats(streamer2Data)
   },
   {
     name: "XXXXX",
     testimonial: "I was skeptical at first, but Wammy's delivered exactly what they promised. The ad optimization strategies they implemented are incredible.",
-    earnings: "$1,958",
+    earnings: "$2,324",
     adsWithoutUs: 95,
     imageLeft: true,
-    streamData: generateStreams(0.5, 5),
-    stats: { moneyEarned: 1958, increasePercent: 420 },
-    popupStats: generatePopupStats(21)
+    streamData: streamer3Data,
+    stats: { moneyEarned: 2324, increasePercent: 420 },
+    popupStats: createPopupStats(streamer3Data)
   },
   {
     name: "XXXXX",
     testimonial: "Finally, an agency that understands Twitch and actually cares about their partners' success. The transparency and support are unmatched.",
-    earnings: "$1,539",
+    earnings: "$1,530",
     adsWithoutUs: 163,
     imageLeft: false,
-    streamData: generateStreams(1.5, 2),
-    stats: { moneyEarned: 1539, increasePercent: 275 },
-    popupStats: generatePopupStats(15)
+    streamData: streamer4Data,
+    stats: { moneyEarned: 1530, increasePercent: 275 },
+    popupStats: createPopupStats(streamer4Data)
   }
 ];
 
