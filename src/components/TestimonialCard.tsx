@@ -39,7 +39,7 @@ const TestimonialCard = ({ name, testimonial, earnings, imageLeft, showConnector
                   <span className="text-twitch font-bold text-xl">{earnings}</span>
                 </div>
                 <div className="w-full bg-gray-800 rounded-full h-2">
-                  <div className="bg-twitch h-2 rounded-full w-3/4 animate-pulse-glow"></div>
+                  <div className="bg-twitch h-2 rounded-full w-full animate-pulse-glow"></div>
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
