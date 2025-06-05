@@ -81,14 +81,24 @@ const Services = ({ onBackHome }: ServicesProps) => {
           </h1>
           <p
             className="text-2xl text-gray-300 italic animate-slide-up"
-            style={{
-              animationDelay: '0.2s',
-              textDecorationLine: 'underline',
-              textDecorationColor: '#9145FE',
-              textDecorationStyle: 'wavy',
-            }}
+            style={{ animationDelay: '0.2s' }}
           >
-            "Earn money just by streaming."
+            <span className="relative inline-block">
+              "Earn money just by streaming."
+              <svg
+                className="absolute left-0 bottom-0 w-full h-[0.45em] -z-10 pointer-events-none"
+                viewBox="0 0 100 8"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 6 Q25 2 50 6 T100 6"
+                  stroke="#9145FE"
+                  strokeWidth="6"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </span>
           </p>
         </div>
 
