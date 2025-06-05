@@ -18,7 +18,7 @@ const CustomTooltip = (
     return (
       <div className="rounded-md bg-gray-800/80 px-3 py-2 text-xs text-white shadow-lg backdrop-blur-sm">
         <p>{label}</p>
-        <p className="font-semibold text-twitch">${payload[0].value}</p>
+        <p className="font-semibold text-twitch">{payload[0].value} streams</p>
       </div>
     );
   }
