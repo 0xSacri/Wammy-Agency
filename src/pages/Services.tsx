@@ -68,7 +68,7 @@ const Services = ({ onBackHome }: ServicesProps) => {
       )}
       <Button
         onClick={handleContactUs}
-        className="absolute right-4 top-4 bg-twitch hover:bg-twitch-dark text-black font-bold py-4 px-12 rounded-lg text-xl transition-all duration-300 hover:scale-105 animate-bounce-scale-delay"
+        className="absolute right-4 top-4 bg-twitch hover:bg-twitch-dark text-black font-bold py-4 px-12 rounded-lg text-xl transition-all duration-300 hover:scale-105"
         style={{ boxShadow: '0 0 30px #9145FE40' }}
       >
         Contact Us
@@ -86,12 +86,12 @@ const Services = ({ onBackHome }: ServicesProps) => {
 
         {/* Stats Section */}
         <div className="grid md:grid-cols-2 gap-12 mb-20">
-          <div className="relative text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up rotating-glow" style={{ animationDelay: '0.4s' }}>
+          <div className="relative text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up shadow-[0_0_40px_#9145FE80]" style={{ animationDelay: '0.4s' }}>
             <div className="text-gray-400 text-lg mb-4">Total Generated</div>
             <AnimatedCounter target={10000} prefix="$" />
             <div className="text-gray-500 text-sm mt-2">For our partners</div>
           </div>
-          <div className="relative text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up rotating-glow" style={{ animationDelay: '0.6s' }}>
+          <div className="relative text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up shadow-[0_0_40px_#9145FE80]" style={{ animationDelay: '0.6s' }}>
             <div className="text-gray-400 text-lg mb-4">Streamers Collaborated</div>
             <AnimatedCounter target={20} />
             <div className="text-gray-500 text-sm mt-2">And counting</div>
@@ -124,7 +124,7 @@ const Services = ({ onBackHome }: ServicesProps) => {
         <div className="text-center py-16">
           <Button
             onClick={handleContactUs}
-            className="bg-twitch hover:bg-twitch-dark text-black font-bold py-4 px-12 rounded-lg text-xl transition-all duration-300 hover:scale-105 animate-bounce-scale-delay"
+            className="bg-twitch hover:bg-twitch-dark text-black font-bold py-4 px-12 rounded-lg text-xl transition-all duration-300 hover:scale-105"
             style={{
               boxShadow: '0 0 30px #9145FE40'
             }}
