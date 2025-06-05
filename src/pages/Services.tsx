@@ -20,7 +20,7 @@ interface ServicesProps {
 
 const testimonialData = [
   {
-    name: "TechGamer99",
+    name: "XXXXX",
     testimonial: "Working with Wammy's Agency has been a game-changer for my streaming career. They helped me increase my ad revenue by 400% while maintaining my authentic content style.",
     earnings: "$3,200",
     imageLeft: true,
@@ -28,7 +28,7 @@ const testimonialData = [
     stats: { moneyEarned: 3200, increasePercent: 400 }
   },
   {
-    name: "StreamQueen",
+    name: "XXXXX",
     testimonial: "The professionalism and results speak for themselves. In just 3 months, I went from struggling to pay bills to having a stable income from streaming.",
     earnings: "$2,800",
     imageLeft: false,
@@ -36,7 +36,7 @@ const testimonialData = [
     stats: { moneyEarned: 2800, increasePercent: 350 }
   },
   {
-    name: "GamingMaster",
+    name: "XXXXX",
     testimonial: "I was skeptical at first, but Wammy's delivered exactly what they promised. The ad optimization strategies they implemented are incredible.",
     earnings: "$4,100",
     imageLeft: true,
@@ -44,7 +44,7 @@ const testimonialData = [
     stats: { moneyEarned: 4100, increasePercent: 420 }
   },
   {
-    name: "RetroStreamer",
+    name: "XXXXX",
     testimonial: "Finally, an agency that understands Twitch and actually cares about their partners' success. The transparency and support are unmatched.",
     earnings: "$2,500",
     imageLeft: false,
@@ -111,6 +111,9 @@ const Services = ({ onBackHome }: ServicesProps) => {
           <h2 className="text-4xl font-bold text-center text-white mb-16">
             Success Stories
           </h2>
+          <p className="text-center text-gray-400 mb-8">
+            Les streamers de notre agence bénéficient de clauses d'anonymat.
+          </p>
           <div className="space-y-8">
             {testimonialData.map((testimonial, index) => (
               <TestimonialCard
