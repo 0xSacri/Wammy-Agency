@@ -79,7 +79,15 @@ const Services = ({ onBackHome }: ServicesProps) => {
           <h1 className="text-6xl font-bold text-white mb-6 animate-slide-up">
             Twitch Services
           </h1>
-          <p className="text-2xl text-gray-300 italic animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p
+            className="text-2xl text-gray-300 italic animate-slide-up"
+            style={{
+              animationDelay: '0.2s',
+              textDecorationLine: 'underline',
+              textDecorationColor: '#9145FE',
+              textDecorationStyle: 'wavy',
+            }}
+          >
             "Earn money just by streaming."
           </p>
         </div>
