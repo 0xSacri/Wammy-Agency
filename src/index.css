@@ -99,3 +99,34 @@
     @apply bg-background text-foreground;
   }
 }
+
+.animated-border-gradient {
+  position: relative;
+  z-index: 0;
+}
+
+.animated-border-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(120deg, #9145FE, #B368FF, #9145FE);
+  background-size: 200% 200%;
+  filter: blur(6px);
+  animation: border-gradient 6s linear infinite;
+  pointer-events: none;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+@keyframes border-gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
