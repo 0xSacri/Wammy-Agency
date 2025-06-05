@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode } from 'react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import RevenueChart, { RevenuePoint } from './RevenueChart';
 
@@ -16,11 +16,8 @@ interface DashboardPopupProps {
 const DashboardPopup = ({ children, data, stats }: DashboardPopupProps) => {
   const streams = data.reduce((acc, curr) => acc + curr.revenue, 0);
   const hours = streams * 3;
-
-  const [open, setOpen] = useState(false);
-
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent
         onEscapeKeyDown={(e) => e.preventDefault()}
