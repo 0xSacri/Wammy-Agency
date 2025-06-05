@@ -22,34 +22,34 @@ const testimonialData = [
   {
     name: "XXXXX",
     testimonial: "Working with Wammy's Agency has been a game-changer for my streaming career. They helped me increase my ad revenue by 400% while maintaining my authentic content style.",
-    earnings: "$3,200",
+    earnings: "$1,815",
     imageLeft: true,
     streamData: generateStreams(1, 3),
-    stats: { moneyEarned: 3200, increasePercent: 400 }
+    stats: { moneyEarned: 1815, increasePercent: 400 }
   },
   {
     name: "XXXXX",
     testimonial: "The professionalism and results speak for themselves. In just 3 months, I went from struggling to pay bills to having a stable income from streaming.",
-    earnings: "$2,800",
+    earnings: "$1,029",
     imageLeft: false,
     streamData: generateStreams(2, 4),
-    stats: { moneyEarned: 2800, increasePercent: 350 }
+    stats: { moneyEarned: 1029, increasePercent: 350 }
   },
   {
     name: "XXXXX",
     testimonial: "I was skeptical at first, but Wammy's delivered exactly what they promised. The ad optimization strategies they implemented are incredible.",
-    earnings: "$4,100",
+    earnings: "$1,958",
     imageLeft: true,
     streamData: generateStreams(0.5, 5),
-    stats: { moneyEarned: 4100, increasePercent: 420 }
+    stats: { moneyEarned: 1958, increasePercent: 420 }
   },
   {
     name: "XXXXX",
     testimonial: "Finally, an agency that understands Twitch and actually cares about their partners' success. The transparency and support are unmatched.",
-    earnings: "$2,500",
+    earnings: "$1,539",
     imageLeft: false,
     streamData: generateStreams(1.5, 2),
-    stats: { moneyEarned: 2500, increasePercent: 275 }
+    stats: { moneyEarned: 1539, increasePercent: 275 }
   }
 ];
 

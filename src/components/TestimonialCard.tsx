@@ -19,6 +19,8 @@ const TestimonialCard = ({ name, testimonial, earnings, imageLeft, showConnector
       revenue: 800 + i * 20 + Math.round(Math.sin(i / 3) * 100)
     }));
 
+  const progress = Math.min(100, (stats.moneyEarned / 2000) * 100);
+
   return (
     <div className="relative py-16">
       <div className={`flex flex-col lg:flex-row items-center gap-12 ${imageLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
@@ -35,11 +37,14 @@ const TestimonialCard = ({ name, testimonial, earnings, imageLeft, showConnector
               </div>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Total Earnings</span>
+                  <span className="text-gray-300">Ads revenues</span>
                   <span className="text-twitch font-bold text-xl">{earnings}</span>
                 </div>
                 <div className="w-full bg-gray-800 rounded-full h-2">
-                  <div className="bg-twitch h-2 rounded-full w-full animate-pulse-glow"></div>
+                  <div
+                    className="bg-twitch h-2 rounded-full animate-pulse-glow"
+                    style={{ width: `${progress}%` }}
+                  ></div>
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
