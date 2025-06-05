@@ -142,7 +142,7 @@ export default {
                                 'float': 'float 3s ease-in-out infinite',
                                 'glow': 'glow 2s ease-in-out infinite',
                                 'slide-up': 'slide-up 0.5s ease-out',
-                                'bounce-scale': 'bounce-scale 1.5s ease-in-out infinite'
+                               'bounce-scale': 'bounce-scale 3s ease-in-out infinite'
                         }
                 }
         },
