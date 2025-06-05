@@ -1,6 +1,5 @@
 
 import { useState, useEffect } from 'react';
-import { LoaderCircle } from 'lucide-react';
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -30,14 +29,15 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         <h1 className="text-6xl font-bold text-twitch mb-8 animate-pulse-glow">
           Wammy's Agency
         </h1>
-        <div className="relative">
-          <LoaderCircle 
-            className="w-16 h-16 text-twitch animate-spin mx-auto" 
+        <div className="relative w-16 h-16 mx-auto">
+          <div className="absolute inset-0 rounded-full border-4 border-twitch/20"></div>
+          <div
+            className="absolute inset-0 rounded-full border-4 border-t-transparent border-r-transparent border-b-transparent border-twitch animate-spin"
             style={{
               filter: 'drop-shadow(0 0 20px #9145FE)',
+              animationDuration: '1.5s'
             }}
-          />
-          <div className="absolute inset-0 w-16 h-16 rounded-full bg-twitch/20 blur-xl animate-pulse mx-auto"></div>
+          ></div>
         </div>
         <div className="mt-4 text-twitch/60 text-sm">
           {progress}%

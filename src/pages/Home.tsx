@@ -24,8 +24,8 @@ const Home = ({ onEnter }: HomeProps) => {
         </p>
         <Button
           onClick={onEnter}
-          className="bg-twitch hover:bg-twitch-dark text-black font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 animate-slide-up"
-          style={{ 
+          className="bg-twitch hover:bg-twitch-dark text-black font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_60px_#9145FE] animate-slide-up"
+          style={{
             animationDelay: '0.4s',
             boxShadow: '0 0 30px #9145FE40'
           }}

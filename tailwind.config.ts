@@ -126,11 +126,19 @@ export default {
                                                 transform: 'translateY(0)'
                                         }
                                 },
-                                'bounce-scale': {
+                               'bounce-scale': {
                                         '0%, 100%': {
                                                 transform: 'scale(1)'
                                         },
                                         '50%': {
+                                                transform: 'scale(1.1)'
+                                        }
+                                },
+                               'bounce-scale-delay': {
+                                        '0%,20%,100%': {
+                                                transform: 'scale(1)'
+                                        },
+                                        '10%': {
                                                 transform: 'scale(1.1)'
                                         }
                                 }
@@ -142,7 +150,8 @@ export default {
                                 'float': 'float 3s ease-in-out infinite',
                                 'glow': 'glow 2s ease-in-out infinite',
                                 'slide-up': 'slide-up 0.5s ease-out',
-                               'bounce-scale': 'bounce-scale 5s ease-in-out infinite'
+                               'bounce-scale': 'bounce-scale 5s ease-in-out infinite',
+                               'bounce-scale-delay': 'bounce-scale-delay 2.5s ease-in-out infinite'
                         }
                 }
         },
