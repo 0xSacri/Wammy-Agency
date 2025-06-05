@@ -82,10 +82,7 @@ const Services = ({ onBackHome }: ServicesProps) => {
           <p
             className="text-2xl text-gray-300 italic animate-slide-up"
             style={{
-              animationDelay: '0.2s',
-              textDecorationLine: 'underline',
-              textDecorationColor: '#9145FE',
-              textDecorationStyle: 'wavy',
+              animationDelay: '0.2s'
             }}
           >
             "Earn money just by streaming."
