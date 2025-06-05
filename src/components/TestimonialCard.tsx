@@ -146,7 +146,7 @@ const TestimonialCard = ({
         {/* Testimonial */}
         <div className="flex-1 text-center lg:text-left">
           <div
-            className={`bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/70 shadow-xl relative transition-all duration-300 transform-gpu [transform:perspective(800px)] hover:shadow-2xl ${
+            className={`bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/70 shadow-xl transition-all duration-300 transform-gpu [transform:perspective(800px)] hover:shadow-2xl animated-border-gradient ${
               imageLeft
                 ? 'hover:[transform:perspective(800px)_rotateY(-8deg)_rotateX(3deg)_translateY(-0.5rem)]'
                 : 'hover:[transform:perspective(800px)_rotateY(8deg)_rotateX(3deg)_translateY(-0.5rem)]'

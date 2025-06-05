@@ -19,7 +19,7 @@ const StreamStatsDialog = ({
 }: StreamStatsDialogProps) => (
   <Dialog>
     <DialogTrigger asChild>{trigger}</DialogTrigger>
-    <DialogContent className="bg-gray-900 text-white border-gray-700 max-w-xl">
+    <DialogContent className="bg-gray-900 text-white border-gray-700 max-w-xl animated-border-gradient">
       <DialogHeader>
         <DialogTitle>Ad Revenue by streams - 30 days</DialogTitle>
       </DialogHeader>
