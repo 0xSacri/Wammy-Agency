@@ -30,13 +30,18 @@ const CursorGlow = () => {
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
       style={{
-        left: position.x - 25,
-        top: position.y - 25,
+        left: position.x,
+        top: position.y,
         transform: 'translate(-50%, -50%)',
       }}
     >
-      <div className="w-12 h-12 rounded-full bg-twitch/20 blur-xl animate-pulse-glow"></div>
-      <div className="absolute inset-0 w-6 h-6 rounded-full bg-twitch/40 blur-md top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+      <div
+        className="w-4 h-4 rounded-full"
+        style={{
+          backgroundColor: '#9145FE',
+          boxShadow: '0 0 10px 4px rgba(145, 69, 254, 0.4)',
+        }}
+      ></div>
     </div>
   );
 };
