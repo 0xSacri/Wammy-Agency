@@ -3,6 +3,9 @@ import AnimatedCounter from '@/components/AnimatedCounter';
 import TestimonialCard from '@/components/TestimonialCard';
 import { Button } from '@/components/ui/button';
 
+const TOTAL_GENERATED = 101_127;
+const STREAMERS_COLLABORATED = 97;
+
 import type { RevenuePoint } from '@/components/RevenueChart';
 
 const generateStreams = (offset: number, amp: number): RevenuePoint[] =>
@@ -93,12 +96,12 @@ const Services = ({ onBackHome }: ServicesProps) => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div className="relative text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up shadow-[0_0_40px_#9145FE80]" style={{ animationDelay: '0.4s' }}>
             <div className="text-gray-400 text-lg mb-4">Total Generated</div>
-            <AnimatedCounter target={101127} prefix="$" />
+            <AnimatedCounter target={TOTAL_GENERATED} prefix="$" />
             <div className="text-gray-500 text-sm mt-2">For our partners</div>
           </div>
           <div className="relative text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up shadow-[0_0_40px_#9145FE80]" style={{ animationDelay: '0.6s' }}>
             <div className="text-gray-400 text-lg mb-4">Streamers Collaborated</div>
-            <AnimatedCounter target={97} />
+            <AnimatedCounter target={STREAMERS_COLLABORATED} />
             <div className="text-gray-500 text-sm mt-2">And counting</div>
           </div>
         </div>
