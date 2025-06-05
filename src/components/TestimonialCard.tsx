@@ -146,10 +146,10 @@ const TestimonialCard = ({
         {/* Testimonial */}
         <div className="flex-1 text-center lg:text-left">
           <div
-            className={`bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/70 shadow-lg relative transition-all duration-300 transform-gpu [transform:perspective(1000px)] hover:shadow-2xl ${
+            className={`bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/70 shadow-xl relative transition-all duration-300 transform-gpu [transform:perspective(800px)] hover:shadow-2xl ${
               imageLeft
-                ? 'hover:[transform:perspective(1000px)_rotateY(-5deg)_rotateX(2deg)_translateY(-0.25rem)]'
-                : 'hover:[transform:perspective(1000px)_rotateY(5deg)_rotateX(2deg)_translateY(-0.25rem)]'
+                ? 'hover:[transform:perspective(800px)_rotateY(-8deg)_rotateX(3deg)_translateY(-0.5rem)]'
+                : 'hover:[transform:perspective(800px)_rotateY(8deg)_rotateX(3deg)_translateY(-0.5rem)]'
             }`}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-twitch/5 to-transparent rounded-2xl"></div>
