@@ -1,5 +1,6 @@
 
 import { RevenuePoint } from './RevenueChart';
+import StreamStatsDialog from './StreamStatsDialog';
 
 interface TestimonialCardProps {
   name: string;
@@ -10,7 +11,12 @@ interface TestimonialCardProps {
   streamData?: RevenuePoint[];
   stats: { moneyEarned: number; increasePercent: number };
   adsWithoutUs: number;
-  flag: string;
+  popupStats?: {
+    data: RevenuePoint[];
+    totalStreams: number;
+    totalHours: number;
+    totalRevenue: number;
+  };
 }
 
 const TestimonialCard = ({
@@ -22,7 +28,7 @@ const TestimonialCard = ({
   streamData,
   stats,
   adsWithoutUs,
-  flag
+  popupStats
 }: TestimonialCardProps) => {
   const chartData =
     streamData ||
@@ -48,43 +54,91 @@ const TestimonialCard = ({
       <div className={`flex flex-col lg:flex-row items-center gap-12 ${imageLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
         {/* Dashboard Screenshot */}
         <div className="flex-1 relative">
-          <div className="bg-gray-900 rounded-2xl p-4 border border-gray-700 shadow-lg relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-twitch/10 to-transparent"></div>
-            <div className="relative">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                <span className="text-gray-400 text-sm ml-4">Twitch Creator Dashboard</span>
-              </div>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Ads revenues</span>
-                  <span className="text-twitch font-bold text-xl">{earnings}</span>
-                </div>
-                <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden flex">
-                  <div
-                    className="bg-yellow-500 h-2 animate-pulse-glow"
-                    style={{ width: `${withoutUsProgress}%` }}
-                  ></div>
-                  <div
-                    className="bg-twitch h-2 animate-pulse-glow"
-                    style={{ width: `${withUsProgress}%` }}
-                  ></div>
-                </div>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <div className="text-gray-400">Ad Revenue</div>
-                    <div className="text-green-400 font-semibold">+{adIncreasePercent}%</div>
+          {popupStats ? (
+            <StreamStatsDialog
+              data={popupStats.data}
+              totalStreams={popupStats.totalStreams}
+              totalHours={popupStats.totalHours}
+              totalRevenue={popupStats.totalRevenue}
+              trigger={
+                <div className="bg-gray-900 rounded-2xl p-4 border border-gray-700 shadow-lg relative overflow-hidden cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-br from-twitch/10 to-transparent"></div>
+                  <div className="relative">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                      <span className="text-gray-400 text-sm ml-4">Twitch Creator Dashboard</span>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-300">Ads revenues</span>
+                        <span className="text-twitch font-bold text-xl">{earnings}</span>
+                      </div>
+                      <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden flex">
+                        <div
+                          className="bg-yellow-500 h-2 animate-pulse-glow"
+                          style={{ width: `${withoutUsProgress}%` }}
+                        ></div>
+                        <div
+                          className="bg-twitch h-2 animate-pulse-glow"
+                          style={{ width: `${withUsProgress}%` }}
+                        ></div>
+                      </div>
+                      <div className="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                          <div className="text-gray-400">Ad Revenue</div>
+                          <div className="text-green-400 font-semibold">+{adIncreasePercent}%</div>
+                        </div>
+                        <div>
+                          <div className="text-gray-400">Ads revenues without us</div>
+                          <div className="text-yellow-500 font-semibold">{withoutUsFormatted}</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-gray-400">Ads revenues without us</div>
-                    <div className="text-yellow-500 font-semibold">{withoutUsFormatted}</div>
+                </div>
+              }
+            />
+          ) : (
+            <div className="bg-gray-900 rounded-2xl p-4 border border-gray-700 shadow-lg relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-twitch/10 to-transparent"></div>
+              <div className="relative">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  <span className="text-gray-400 text-sm ml-4">Twitch Creator Dashboard</span>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-300">Ads revenues</span>
+                    <span className="text-twitch font-bold text-xl">{earnings}</span>
+                  </div>
+                  <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden flex">
+                    <div
+                      className="bg-yellow-500 h-2 animate-pulse-glow"
+                      style={{ width: `${withoutUsProgress}%` }}
+                    ></div>
+                    <div
+                      className="bg-twitch h-2 animate-pulse-glow"
+                      style={{ width: `${withUsProgress}%` }}
+                    ></div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <div className="text-gray-400">Ad Revenue</div>
+                      <div className="text-green-400 font-semibold">+{adIncreasePercent}%</div>
+                    </div>
+                    <div>
+                      <div className="text-gray-400">Ads revenues without us</div>
+                      <div className="text-yellow-500 font-semibold">{withoutUsFormatted}</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* Testimonial */}
@@ -96,9 +150,7 @@ const TestimonialCard = ({
               <p className="text-gray-300 text-lg mb-6 italic leading-relaxed">
                 {testimonial}
               </p>
-              <div className="text-twitch font-semibold text-xl flex items-center gap-2">
-                — {name} <span>{flag}</span>
-              </div>
+              <div className="text-twitch font-semibold text-xl">— {name}</div>
               <div className="text-gray-400 text-sm">
                 Twitch Partner
               </div>

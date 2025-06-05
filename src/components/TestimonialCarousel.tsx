@@ -4,33 +4,27 @@ import { useState, useEffect } from 'react';
 interface Testimonial {
   name: string;
   text: string;
-  flag: string;
 }
 
 const testimonials: Testimonial[] = [
   {
     name: "StreamerPro",
-    flag: "🇺🇸",
     text: "Wammy's Agency boosted my revenue by 300% in just two months!"
   },
   {
     name: "GamerElite",
-    flag: "🇨🇦",
     text: "Professional service and incredible results. Highly recommended!"
   },
   {
     name: "TwitchStar",
-    flag: "🇩🇪",
     text: "Finally, an agency that delivers on their promises. Amazing work!"
   },
   {
     name: "ContentCreator",
-    flag: "🇬🇧",
     text: "The best investment I've made for my streaming career."
   },
   {
     name: "DigitalNomad",
-    flag: "🇪🇸",
     text: "Transparent, efficient, and incredibly effective. 5 stars!"
   }
 ];
@@ -67,10 +61,7 @@ const TestimonialCarousel = () => {
               <p className="text-gray-300 text-lg italic mb-4">
                 "{testimonial.text}"
               </p>
-              <p className="text-twitch font-semibold flex items-center justify-center gap-1">
-                — {testimonial.name}
-                <span>{testimonial.flag}</span>
-              </p>
+              <p className="text-twitch font-semibold">— {testimonial.name}</p>
             </div>
           </div>
         ))}
