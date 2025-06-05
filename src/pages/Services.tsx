@@ -66,7 +66,7 @@ const Services = ({ onBackHome }: ServicesProps) => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div className="text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <div className="text-gray-400 text-lg mb-4">Total Generated</div>
-            <AnimatedCounter target={15000} prefix="$" suffix="K" />
+            <AnimatedCounter target={10000} prefix="$" />
             <div className="text-gray-500 text-sm mt-2">For our partners</div>
           </div>
           <div className="text-center p-8 bg-gray-900/30 rounded-lg border border-twitch/20 animate-slide-up" style={{ animationDelay: '0.6s' }}>
