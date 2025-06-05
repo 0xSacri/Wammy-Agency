@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import RevenueChart, { RevenuePoint } from './RevenueChart';
 
@@ -17,8 +17,10 @@ const DashboardPopup = ({ children, data, stats }: DashboardPopupProps) => {
   const streams = data.reduce((acc, curr) => acc + curr.revenue, 0);
   const hours = streams * 3;
 
+  const [open, setOpen] = useState(false);
+
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent
         className="bg-gray-900 text-white border border-twitch/40 shadow-[0_0_30px_#9145FE] animate-glow"
