@@ -112,7 +112,7 @@ const Services = ({ onBackHome }: ServicesProps) => {
             Success Stories
           </h2>
           <p className="text-center text-gray-400 mb-8">
-            Les streamers de notre agence bénéficient de clauses d'anonymat.
+            Our agency's streamers benefit from anonymity clauses.
           </p>
           <div className="space-y-8">
             {testimonialData.map((testimonial, index) => (
