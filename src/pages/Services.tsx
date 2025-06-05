@@ -131,20 +131,26 @@ const Services = ({ onBackHome }: ServicesProps) => {
         {/* Stats Section */}
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div
-            className="text-center p-8 bg-gray-900/30 rounded-2xl border border-gray-700 shadow-lg animate-slide-up animated-border-gradient"
+            className="relative text-center p-8 bg-gray-900/30 rounded-2xl border border-gray-700 shadow-lg animate-slide-up animated-border-gradient"
             style={{ animationDelay: '0.4s' }}
           >
-            <div className="text-gray-400 text-lg mb-4">Total Generated</div>
-            <AnimatedCounter target={TOTAL_GENERATED} prefix="$" />
-            <div className="text-gray-500 text-sm mt-2">For our partners</div>
+            <div className="absolute inset-0 bg-gradient-to-r from-twitch/5 to-transparent rounded-2xl"></div>
+            <div className="relative">
+              <div className="text-gray-400 text-lg mb-4">Total Generated</div>
+              <AnimatedCounter target={TOTAL_GENERATED} prefix="$" />
+              <div className="text-gray-500 text-sm mt-2">For our partners</div>
+            </div>
           </div>
           <div
-            className="text-center p-8 bg-gray-900/30 rounded-2xl border border-gray-700 shadow-lg animate-slide-up animated-border-gradient"
+            className="relative text-center p-8 bg-gray-900/30 rounded-2xl border border-gray-700 shadow-lg animate-slide-up animated-border-gradient"
             style={{ animationDelay: '0.6s' }}
           >
-            <div className="text-gray-400 text-lg mb-4">Streamers Collaborated</div>
-            <AnimatedCounter target={STREAMERS_COLLABORATED} />
-            <div className="text-gray-500 text-sm mt-2">And counting</div>
+            <div className="absolute inset-0 bg-gradient-to-r from-twitch/5 to-transparent rounded-2xl"></div>
+            <div className="relative">
+              <div className="text-gray-400 text-lg mb-4">Streamers Collaborated</div>
+              <AnimatedCounter target={STREAMERS_COLLABORATED} />
+              <div className="text-gray-500 text-sm mt-2">And counting</div>
+            </div>
           </div>
         </div>
 
