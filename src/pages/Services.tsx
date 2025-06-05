@@ -14,6 +14,23 @@ const generateStreams = (offset: number, amp: number): RevenuePoint[] =>
     revenue: Math.max(0, Math.round(Math.sin(i / 3 + offset) * amp + amp))
   }));
 
+const generatePopupStats = (streamCount: number) => {
+  const data: RevenuePoint[] = [];
+  let totalRevenue = 0;
+  let totalHours = 0;
+  for (let i = 0; i < streamCount; i++) {
+    const revenue = 100 + Math.round(Math.random() * 100);
+    const hours = 2 + Math.round(Math.random() * 3);
+    totalRevenue += revenue;
+    totalHours += hours;
+    data.push({ date: `Day ${i + 1}`, revenue });
+  }
+  for (let i = streamCount; i < 30; i++) {
+    data.push({ date: `Day ${i + 1}`, revenue: 0 });
+  }
+  return { data, totalStreams: streamCount, totalHours, totalRevenue };
+};
+
 interface ServicesProps {
   onBackHome?: () => void;
 }
@@ -27,7 +44,7 @@ const testimonialData = [
     imageLeft: true,
     streamData: generateStreams(1, 3),
     stats: { moneyEarned: 1815, increasePercent: 400 },
-    flag: "🇮🇹"
+    popupStats: generatePopupStats(17)
   },
   {
     name: "XXXXX",
@@ -37,7 +54,7 @@ const testimonialData = [
     imageLeft: false,
     streamData: generateStreams(2, 4),
     stats: { moneyEarned: 1029, increasePercent: 350 },
-    flag: "🇫🇷"
+    popupStats: generatePopupStats(13)
   },
   {
     name: "XXXXX",
@@ -47,7 +64,7 @@ const testimonialData = [
     imageLeft: true,
     streamData: generateStreams(0.5, 5),
     stats: { moneyEarned: 1958, increasePercent: 420 },
-    flag: "🇺🇸"
+    popupStats: generatePopupStats(21)
   },
   {
     name: "XXXXX",
@@ -57,7 +74,7 @@ const testimonialData = [
     imageLeft: false,
     streamData: generateStreams(1.5, 2),
     stats: { moneyEarned: 1539, increasePercent: 275 },
-    flag: "🇺🇸"
+    popupStats: generatePopupStats(15)
   }
 ];
 
@@ -133,7 +150,7 @@ const Services = ({ onBackHome }: ServicesProps) => {
                 imageLeft={testimonial.imageLeft}
                 streamData={testimonial.streamData}
                 stats={testimonial.stats}
-                flag={testimonial.flag}
+                popupStats={testimonial.popupStats}
                 showConnector={index < testimonialData.length - 1}
               />
             ))}
