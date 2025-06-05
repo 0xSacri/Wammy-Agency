@@ -21,7 +21,7 @@ const StreamStatsDialog = ({
     <DialogTrigger asChild>{trigger}</DialogTrigger>
     <DialogContent className="bg-gray-900 text-white border-gray-700 max-w-xl">
       <DialogHeader>
-        <DialogTitle>Ad Revenue by streams - 30 days</DialogTitle>
+        <DialogTitle>Ad Revenue by day - 30 days</DialogTitle>
       </DialogHeader>
       <RevenueChart data={data} />
       <div className="grid grid-cols-3 gap-4 mt-4 text-center">
