@@ -33,16 +33,13 @@ const CursorGlow = () => {
         left: position.x,
         top: position.y,
         transform: 'translate(-50%, -50%)',
+        width: '1px',
+        height: '1px',
+        borderRadius: '50%',
+        backgroundColor: 'transparent',
+        boxShadow: '0 0 12px 6px rgba(145, 69, 254, 0.3)',
       }}
-    >
-      <div
-        className="w-4 h-4 rounded-full"
-        style={{
-          backgroundColor: '#9145FE',
-          boxShadow: '0 0 10px 4px rgba(145, 69, 254, 0.4)',
-        }}
-      ></div>
-    </div>
+    />
   );
 };
 
