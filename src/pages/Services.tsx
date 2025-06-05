@@ -3,6 +3,14 @@ import AnimatedCounter from '@/components/AnimatedCounter';
 import TestimonialCard from '@/components/TestimonialCard';
 import { Button } from '@/components/ui/button';
 
+import type { RevenuePoint } from '@/components/RevenueChart';
+
+const generateStreams = (offset: number, amp: number): RevenuePoint[] =>
+  Array.from({ length: 30 }, (_, i) => ({
+    date: `Day ${i + 1}`,
+    revenue: Math.max(0, Math.round(Math.sin(i / 3 + offset) * amp + amp))
+  }));
+
 interface ServicesProps {
   onBackHome?: () => void;
 }
@@ -12,25 +20,33 @@ const testimonialData = [
     name: "TechGamer99",
     testimonial: "Working with Wammy's Agency has been a game-changer for my streaming career. They helped me increase my ad revenue by 400% while maintaining my authentic content style.",
     earnings: "$3,200",
-    imageLeft: true
+    imageLeft: true,
+    streamData: generateStreams(1, 3),
+    stats: { moneyEarned: 3200, increasePercent: 400 }
   },
   {
     name: "StreamQueen",
     testimonial: "The professionalism and results speak for themselves. In just 3 months, I went from struggling to pay bills to having a stable income from streaming.",
     earnings: "$2,800",
-    imageLeft: false
+    imageLeft: false,
+    streamData: generateStreams(2, 4),
+    stats: { moneyEarned: 2800, increasePercent: 350 }
   },
   {
     name: "GamingMaster",
     testimonial: "I was skeptical at first, but Wammy's delivered exactly what they promised. The ad optimization strategies they implemented are incredible.",
     earnings: "$4,100",
-    imageLeft: true
+    imageLeft: true,
+    streamData: generateStreams(0.5, 5),
+    stats: { moneyEarned: 4100, increasePercent: 420 }
   },
   {
     name: "RetroStreamer",
     testimonial: "Finally, an agency that understands Twitch and actually cares about their partners' success. The transparency and support are unmatched.",
     earnings: "$2,500",
-    imageLeft: false
+    imageLeft: false,
+    streamData: generateStreams(1.5, 2),
+    stats: { moneyEarned: 2500, increasePercent: 275 }
   }
 ];
 
@@ -95,6 +111,8 @@ const Services = ({ onBackHome }: ServicesProps) => {
                 testimonial={testimonial.testimonial}
                 earnings={testimonial.earnings}
                 imageLeft={testimonial.imageLeft}
+                streamData={testimonial.streamData}
+                stats={testimonial.stats}
                 showConnector={index < testimonialData.length - 1}
               />
             ))}

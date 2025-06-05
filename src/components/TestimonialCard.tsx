@@ -8,12 +8,13 @@ interface TestimonialCardProps {
   earnings: string;
   imageLeft: boolean;
   showConnector?: boolean;
-  revenueData?: RevenuePoint[];
+  streamData?: RevenuePoint[];
+  stats: { moneyEarned: number; increasePercent: number };
 }
 
-const TestimonialCard = ({ name, testimonial, earnings, imageLeft, showConnector = true, revenueData }: TestimonialCardProps) => {
+const TestimonialCard = ({ name, testimonial, earnings, imageLeft, showConnector = true, streamData, stats }: TestimonialCardProps) => {
   const chartData =
-    revenueData ||
+    streamData ||
     Array.from({ length: 30 }, (_, i) => ({
       date: `Day ${i + 1}`,
       revenue: 800 + i * 20 + Math.round(Math.sin(i / 3) * 100)
@@ -24,7 +25,7 @@ const TestimonialCard = ({ name, testimonial, earnings, imageLeft, showConnector
       <div className={`flex flex-col lg:flex-row items-center gap-12 ${imageLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
         {/* Dashboard Screenshot */}
         <div className="flex-1 relative">
-          <DashboardPopup data={chartData}>
+          <DashboardPopup data={chartData} stats={stats}>
             <div className="bg-gray-900 rounded-lg p-4 border border-twitch/30 relative overflow-hidden cursor-pointer hover:shadow-lg transition-shadow">
               <div className="absolute inset-0 bg-gradient-to-br from-twitch/10 to-transparent"></div>
               <div className="relative">
