@@ -16,7 +16,8 @@ const Home = ({ onEnter }: HomeProps) => {
 
       <div className="text-center z-10">
         <h1 className="text-7xl font-bold text-white mb-4 animate-slide-up">
-          Wammy's <span className="text-twitch">Agency</span>
+          <span className="text-twitch">Wammy's</span>{" "}
+          <span className="text-twitch">Agency</span>
         </h1>
         <p className="text-gray-400 text-xl mb-12 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           Elite Twitch Partnership Solutions
