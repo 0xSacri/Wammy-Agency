@@ -33,11 +33,11 @@ const CursorGlow = () => {
         left: position.x,
         top: position.y,
         transform: 'translate(-50%, -50%)',
-        width: '1px',
-        height: '1px',
+        width: '2px',
+        height: '2px',
         borderRadius: '50%',
-        backgroundColor: 'transparent',
-        boxShadow: '0 0 12px 6px rgba(145, 69, 254, 0.3)',
+        backgroundColor: 'rgba(145, 69, 254, 0.2)',
+        boxShadow: '0 0 24px 12px rgba(145, 69, 254, 0.5)',
       }}
     />
   );
