@@ -7,6 +7,7 @@ interface TestimonialCardProps {
   testimonial: string;
   earnings: string;
   imageLeft: boolean;
+  imageSrc?: string;
   showConnector?: boolean;
   streamData?: RevenuePoint[];
   stats: { moneyEarned: number; increasePercent: number };
@@ -24,6 +25,7 @@ const TestimonialCard = ({
   testimonial,
   earnings,
   imageLeft,
+  imageSrc,
   showConnector = true,
   streamData,
   stats,
@@ -143,16 +145,25 @@ const TestimonialCard = ({
 
         {/* Testimonial */}
         <div className="flex-1 text-center lg:text-left">
-          <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/70 shadow-lg relative">
+          <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/70 shadow-lg relative transition-all hover:shadow-2xl hover:-translate-y-1">
             <div className="absolute inset-0 bg-gradient-to-r from-twitch/5 to-transparent rounded-2xl"></div>
             <div className="relative">
               <div className="text-6xl text-twitch/30 mb-4">"</div>
               <p className="text-gray-300 text-lg mb-6 italic leading-relaxed">
                 {testimonial}
               </p>
-              <div className="text-twitch font-semibold text-xl">— {name}</div>
-              <div className="text-gray-400 text-sm">
-                Twitch Partner
+              <div className="flex items-center justify-center lg:justify-start gap-4 mt-6">
+                {imageSrc && (
+                  <img
+                    src={imageSrc}
+                    alt={`${name} avatar`}
+                    className="w-16 h-16 rounded-full object-cover filter blur-sm ring-2 ring-gray-300/70 animate-glow"
+                  />
+                )}
+                <div>
+                  <div className="text-twitch font-semibold text-xl">— {name}</div>
+                  <div className="text-gray-400 text-sm">Twitch Partner</div>
+                </div>
               </div>
             </div>
           </div>
