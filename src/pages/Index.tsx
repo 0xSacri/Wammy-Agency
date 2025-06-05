@@ -3,7 +3,6 @@ import { useState } from 'react';
 import LoadingScreen from '@/components/LoadingScreen';
 import Home from './Home';
 import Services from './Services';
-import CursorGlow from '@/components/CursorGlow';
 
 const Index = () => {
   const [currentPage, setCurrentPage] = useState<'loading' | 'home' | 'services'>('loading');
@@ -22,7 +21,6 @@ const Index = () => {
 
   return (
     <div className="relative">
-      <CursorGlow />
       
       {currentPage === 'loading' && (
         <LoadingScreen onComplete={handleLoadingComplete} />
